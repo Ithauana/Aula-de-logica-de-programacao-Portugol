@@ -1,0 +1,68 @@
+programa {
+  inteiro numero_um, numero_dois, minuto, idade, porcentagem_aumento
+  real base, altura, raio, salario, preco_produto
+
+  funcao inicio() {
+    questao_sete()
+  }
+
+  funcao questao_um() {
+    escreva("------QUESTÃO 1------\n")
+    escreva("Escreva o número 1: ")
+    leia(numero_um)
+    escreva("Escreva o número 2: ")
+    leia(numero_dois)
+    escreva("\nA soma dos números é: ", numero_um + numero_dois)
+  }
+
+  funcao questao_dois() {
+     escreva("\n\n------QUESTÃO 2------\n")
+    escreva("\nEscreva o número 1: ")
+    leia(numero_um)
+    escreva("\nescreva número 2: ")
+    leia(numero_dois)
+    escreva("\na média aritmética é: ", (numero_um + numero_dois)/2)
+  }
+
+  funcao questao_tres(){
+    escreva("\n\n------QUESTÃO 3------\n")
+    escreva("\nDigite o valor da base do quadrado: ")
+    leia(base)
+    escreva("\nDigite o valor da altura do quadrado: ")
+    leia(altura)
+    escreva("Área de um retângulo é: ", base*altura)
+  }
+
+  funcao questao_quatro() {
+     escreva("\n\n------QUESTÃO 4------\n")
+     escreva("Digite o valor de raio: ")
+     leia(raio)
+     escreva("\nÁrea do círculo: ",3.14 * (raio * raio))
+  }
+
+  funcao questao_cinco() {
+    escreva("Escreva a quantidade de minutos: ")
+    leia(minuto)
+    escreva(minuto, " minutos é ", minuto/60, " horas")
+  }
+
+  funcao questao_seis() {
+    escreva("Digite sua idade: ")
+    leia(idade)
+    escreva("Você tem: ", idade * 365, " dias")
+  }
+
+  funcao questao_sete() {
+    escreva("Digite o seu salário: ")
+    leia(salario)
+    escreva("Escreva a porcentagem de aumento: ")
+    leia(porcentagem_aumento)
+    escreva(salario + (salario *(porcentagem_aumento /100)) )
+  }
+
+  funcao  questao_oito() {
+    escreva("Digite o preço do produto: ")
+    leia(preco_produto)
+    escreva(preco_produto -(preco_produto))
+  }
+}
