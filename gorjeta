@@ -1,0 +1,10 @@
+programa {
+  real valor_total_conta
+  funcao inicio() {
+    escreva("Digite o valor total da conta: ")
+    leia(valor_total_conta)
+    escreva("valor total da conta: ",valor_total_conta + (valor_total_conta * 0.10))
+    escreva("\nvalor da gorjeta: ", valor_total_conta * 0.10)
+  
+  }
+}
