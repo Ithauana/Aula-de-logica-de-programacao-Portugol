@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    cadeia codigo
+    inteiro quantidade
+    real preco = 0
+    
+
+    enquanto (codigo != "0") {
+    escreva("\nDigite 0 para encerrar a compra")
+    escreva("\nDigite o código do pedido:")
+    leia(codigo)
+
+    escreva("\nDigite a quantidade desejada:")
+    leia(quantidade)
+
+    preco += calcula_quantidade(codigo, quantidade)
+    escreva("\nValor total:", preco)
+    }
+  }
+
+  funcao real calcula_quantidade(cadeia codigo, inteiro quantidade) {
+    real valor_x_quantidade
+    se (codigo == "1"){
+      escreva("\nArroz - 10R$")
+      valor_x_quantidade = quantidade * 10.00
+      retorne valor_x_quantidade
+    }
+    se (codigo == "2"){
+        escreva("\nFeijão - 11R$")
+        valor_x_quantidade = quantidade * 11.00
+        retorne valor_x_quantidade
+    }
+   senao {
+    escreva("\nCódigo não encontrado")
+   }
+  }
+}
