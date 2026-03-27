@@ -1,0 +1,23 @@
+programa {
+  inteiro numero
+  funcao inicio() {
+    escreva("Escreva o número:")
+    leia(numero)
+
+    se(numero % 2 == 0 ) {
+      escreva("\nNúmero par")
+    } senao {
+      escreva("\nNúmero ímpar")
+    }
+    se (numero < 0) {
+      escreva("\nNúmero negativo")
+    } senao {
+      escreva("\nPositivo")
+    }
+    se (numero % 3 == 0) {
+      escreva("\nMúltiplo de 3")
+    } senao {
+      escreva("\nNão é múltplo de 3")
+    }
+  }
+}
