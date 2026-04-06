@@ -1,0 +1,25 @@
+programa {
+  real salario_bruto, salario_desconto
+  funcao inicio() {
+    escreva("\nEscreva o salário bruto")
+    leia(salario_bruto)
+
+    se (salario_bruto <= 2000){
+      escreva("8% de desconto")
+      salario_desconto = salario_bruto - (salario_bruto * 0.08)
+    } senao se (salario_bruto > 2000){
+      escreva("10% de desconto")
+      salario_desconto = salario_bruto - (salario_bruto * 0.10)
+    }
+
+    escreva("\nDesconto:", salario_desconto)
+    se (salario_bruto < 1500){
+      escreva("\nBônus: ")
+      salario_desconto = salario_desconto + 200
+
+    }
+
+
+    escreva("\nSalario final: ", salario_desconto)
+  }
+}
