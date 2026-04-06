@@ -1,0 +1,13 @@
+programa {
+  real valor_compra
+  real valor_total = 0
+  funcao inicio() {
+    enquanto (valor_compra != 0){
+      escreva("\nDigite 0 para encerrar a compra")
+      escreva("\nDigite o valor da compra: ")
+      leia(valor_compra)
+      valor_total = valor_total + valor_compra
+    }
+     escreva("\nValor total da compra:", valor_total)
+  }
+}
